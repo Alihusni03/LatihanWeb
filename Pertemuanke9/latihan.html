@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flex</title>
+    <style>
+        .container{
+            width: 100%;
+            border: 5px solid yellow;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column-reverse; */
+            /* flex-flow: column wrap; */
+            margin: auto;
+            height: 200px;
+            justify-content: space-between;
+            justify-content: space-around;
+            /* align-items: center; */
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            padding: 20px;
+            background-color: tomato;
+            
+        }
+        .item1{
+
+            /* order: 2; */
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            margin: 10px;
+            flex-grow: 1;
+            /* padding: 20px; */
+        }
+        .item2{
+            /* order: 1; */
+            /* height: 100px; */
+            width: 100px;
+            background-color: tomato;
+            margin: 10px;
+            flex-grow: 1;
+            /* padding: 20px; */
+        }
+        .item5{
+            /* order: 4; */
+            /* height: 100px; */
+            width: 100px;
+            background-color: tomato;
+            margin: 10px;
+            padding: 20px;
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+            /* flex-basis: 100px ; */
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item1">2</div>
+        <div class="item2">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item5">6</div>
+</body>
+</html>
