@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan grid</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 50px auto;
+            padding: 10px;
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; mengatur colom  */
+            /* grid-template-rows: 100px 150px; mengatur height */
+            /* grid-gap: 10px; mengatur jarak */
+            /* grid-auto-rows: 50px; mengatur jarak yang di bawah */
+            /* grid-template-columns: repeat(6, 1fr); untuk mengatur berapa colom dan mengatur lebar colom */
+            /* grid-template-columns: 1fr min-content 1fr; untuk mengatur conten yang paling panjang */
+            /* grid-template-columns: 1fr max-content 1fr; buat mengatur panjang semua conten */
+            /* grid-template-columns: minmax(10px 30px); */
+            /* grid-auto-flow: column; */
+            /* grid-template-rows: repeat(3, 150px); */
+            /* grid-auto-columns: 50px; mangatur yang tidak ke atur oleh kita  */
+            /* grid-template-columns: 100px; */
+        }
+        .item{
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item:nth-child(even){
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+    </div>
+</body>
+</html>
